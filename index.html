@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Filter ui cards via their profession.</h3>
+
+        <div class="dropdown">
+            <select name="profession" id="profession-dropdown" class="inner-dropdown" >
+                <option value="invalid" selected>Profession</option>
+                <option value="developer">Developer</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="data-cards" id="data-cards">
+            <div class="inner-data">
+                <div class="sl-no">1.</div>
+                <div class="sl-name">Name: John</div>
+                <div class="sl-pro">Profession: Developer</div>
+                <div class="sl-age">Age: 18</div>
+            </div>
+
+            <div class="inner-data">
+                <div class="sl-no">2.</div>
+                <div class="sl-name">Name: Jack</div>
+                <div class="sl-pro">Profession: Developer</div>
+                <div class="sl-age">Age: 20</div>
+            </div>
+
+            <div class="inner-data">
+                <div class="sl-no">3.</div>
+                <div class="sl-name">Name: Karen</div>
+                <div class="sl-pro">Profession: Admin</div>
+                <div class="sl-age">Age: 18</div>
+            </div>
+        </div>
+
+        <button id="filter-btn" class="btn-1 btn">Filter</button>
+
+        <div class="inner-container">
+            <h3>Add a new user</h3>
+
+            <form id="form" class="form" method="post" >
+                
+                <div class="input-element">
+                    <div class="inner-element">
+                        <label for="name">Enter Name</label>
+                        <input type="text" id="name" name="name" class="input" required>
+                    </div>
+                    <div class="inner-element">
+                        <label for="profession-input">Enter Profession</label>
+                        <input type="text" id="profession-input" name="profession-input" class="input" required>
+                    </div>
+                    <div class="inner-element">
+                        <label for="age">Enter Age</label>
+                        <input type="number" id="age" name="age" class="input" required>
+                    </div>
+                </div>
+            </form>
+
+            <button id="form-btn" class="btn-2 btn">Add user</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
